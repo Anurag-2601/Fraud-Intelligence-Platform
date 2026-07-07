@@ -1,16 +1,27 @@
-occupation,segment
-Software Engineer,Salaried
-Data Analyst,Salaried
-Teacher,Salaried
-Doctor,Salaried
-Civil Engineer,Salaried
-Mechanical Engineer,Salaried
-Business Owner,Business
-Trader,Business
-Shop Owner,Business
-Consultant,Freelancer
-Designer,Freelancer
-Content Creator,Freelancer
-Student,Student
-Retired Employee,Senior Citizen
-Pensioner,Senior Citizen
+occupation,segment,avg_income,salary_day,transaction_frequency,preferred_payment,risk_band
+Software Engineer,Salaried,1200000,1,High,UPI,Low
+Data Analyst,Salaried,900000,1,Medium,UPI,Low
+Data Engineer,Salaried,1400000,1,High,Credit Card,Low
+ML Engineer,Salaried,1600000,1,High,Credit Card,Low
+Doctor,Professional,2400000,5,Medium,Credit Card,Low
+Teacher,Salaried,600000,1,Low,UPI,Low
+Chartered Accountant,Professional,1800000,7,Medium,Net Banking,Low
+Lawyer,Professional,2000000,10,Medium,Credit Card,Medium
+Business Owner,Business,4500000,,Very High,Net Banking,Medium
+Retail Shop Owner,Business,1800000,,High,UPI,Medium
+Government Employee,Salaried,850000,1,Medium,Debit Card,Low
+Bank Employee,Salaried,950000,1,Medium,UPI,Low
+Police Officer,Government,900000,1,Medium,Debit Card,Low
+Farmer,Self Employed,500000,,Low,UPI,Medium
+Freelancer,Freelancer,1100000,,High,UPI,Medium
+Student,Student,150000,10,Medium,UPI,Medium
+Homemaker,Other,200000,,Low,Debit Card,Low
+Retired,Senior Citizen,450000,5,Low,Debit Card,Low
+Sales Executive,Salaried,700000,1,High,UPI,Medium
+Nurse,Professional,650000,1,Medium,Debit Card,Low
+Pharmacist,Professional,700000,1,Medium,UPI,Low
+Civil Engineer,Salaried,1000000,1,Medium,Credit Card,Low
+Mechanical Engineer,Salaried,950000,1,Medium,Credit Card,Low
+Electrician,Self Employed,550000,,Medium,UPI,Medium
+Driver,Self Employed,400000,,High,UPI,Medium
+Consultant,Professional,2200000,15,High,Net Banking,Low

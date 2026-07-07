@@ -1,0 +1,19 @@
+bank_name,bank_type,headquarters,swift_code,market_share_percent,customers_million,upi_enabled,internet_banking,mobile_banking,supports_imps,supports_neft,supports_rtgs
+State Bank of India,Public Sector,Mumbai,SBININBB,22.0,500,1,1,1,1,1,1
+HDFC Bank,Private Sector,Mumbai,HDFCINBB,11.5,93,1,1,1,1,1,1
+ICICI Bank,Private Sector,Mumbai,ICICINBB,9.2,80,1,1,1,1,1,1
+Axis Bank,Private Sector,Mumbai,AXISINBB,5.8,55,1,1,1,1,1,1
+Punjab National Bank,Public Sector,New Delhi,PUNBINBB,6.5,180,1,1,1,1,1,1
+Bank of Baroda,Public Sector,Vadodara,BARBINBB,5.2,150,1,1,1,1,1,1
+Canara Bank,Public Sector,Bengaluru,CNRBINBB,4.8,120,1,1,1,1,1,1
+Union Bank of India,Public Sector,Mumbai,UBININBB,4.3,110,1,1,1,1,1,1
+Indian Bank,Public Sector,Chennai,IDIBINBB,2.8,60,1,1,1,1,1,1
+Bank of India,Public Sector,Mumbai,BKIDINBB,3.1,70,1,1,1,1,1,1
+Kotak Mahindra Bank,Private Sector,Mumbai,KKBKINBB,3.0,45,1,1,1,1,1,1
+IndusInd Bank,Private Sector,Mumbai,INDBINBB,2.2,39,1,1,1,1,1,1
+IDFC FIRST Bank,Private Sector,Mumbai,IDFBINBB,1.8,30,1,1,1,1,1,1
+AU Small Finance Bank,Small Finance,Jaipur,AUBLINBB,0.8,10,1,1,1,1,1,1
+Ujjivan Small Finance Bank,Small Finance,Bengaluru,UJVNINBB,0.5,8,1,1,1,1,1,1
+India Post Payments Bank,Payments Bank,New Delhi,IPPBINBB,0.9,25,1,1,1,1,1,0
+Airtel Payments Bank,Payments Bank,New Delhi,AIRPINBB,0.6,12,1,1,1,1,1,0
+Fino Payments Bank,Payments Bank,Mumbai,FINOINBB,0.2,5,1,1,1,1,1,0

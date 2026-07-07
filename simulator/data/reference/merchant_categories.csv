@@ -1,14 +1,30 @@
-category,risk_level
-Grocery,Low
-Restaurant,Low
-Fuel,Low
-Pharmacy,Low
-Hospital,Low
-Electronics,Medium
-Shopping,Medium
-Travel,Medium
-Entertainment,Medium
-Jewellery,High
-Crypto Exchange,High
-Gaming,High
-International Transfer,High
+merchant_category,merchant_name,mcc_code,channel,avg_transaction,risk_level,fraud_weight,settlement_type
+E-Commerce,Amazon India,5942,Online,2500,Low,5,T+1
+E-Commerce,Flipkart,5942,Online,2200,Low,5,T+1
+Food Delivery,Swiggy,5812,Online,450,Low,3,T+1
+Food Delivery,Zomato,5812,Online,500,Low,3,T+1
+Ride Sharing,Uber,4121,Online,350,Low,4,T+1
+Ride Sharing,Rapido,4121,Online,180,Low,4,T+1
+Grocery,Reliance Fresh,5411,Offline,1200,Low,2,T+1
+Supermarket,DMart,5411,Offline,2200,Low,2,T+1
+Pharmacy,Apollo Pharmacy,5912,Offline,900,Low,2,T+1
+Fuel,Indian Oil,5541,Offline,3000,Medium,8,T+1
+Fuel,HP Petrol,5541,Offline,3200,Medium,8,T+1
+Fuel,Bharat Petroleum,5541,Offline,3100,Medium,8,T+1
+Travel,IRCTC,4112,Online,1800,Low,3,T+1
+Airlines,Air India,4511,Online,8500,Medium,10,T+2
+Hotels,OYO,7011,Online,3500,Medium,10,T+2
+Entertainment,BookMyShow,7922,Online,700,Low,3,T+1
+Telecom,Jio Recharge,4814,Online,399,Low,2,Instant
+Telecom,Airtel Recharge,4814,Online,499,Low,2,Instant
+Streaming,Netflix,4899,Online,649,Low,2,Recurring
+Streaming,Spotify,4899,Online,119,Low,2,Recurring
+App Store,Google Play,5815,Online,800,Medium,8,Instant
+App Store,Apple App Store,5815,Online,1200,Medium,8,Instant
+Gaming,Steam,5816,Online,1800,Medium,12,Instant
+Electronics,Croma,5732,Offline,18000,Medium,15,T+2
+Jewellery,Tanishq,5094,Offline,75000,High,30,T+2
+Luxury,Rolex Boutique,5944,Offline,450000,High,40,T+3
+Crypto,Crypto Exchange,6051,Online,50000,Very High,50,Instant
+International,PayPal Merchant,4829,Online,15000,High,35,Instant
+Charity,NGO Donation,8398,Online,1200,Medium,10,T+1

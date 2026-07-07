@@ -1,13 +1,56 @@
-bank_name,branch_name,ifsc_prefix
-State Bank of India,Hyderabad Main,SBIN
-State Bank of India,Begumpet,SBIN
-State Bank of India,Gachibowli,SBIN
-HDFC Bank,Madhapur,HDFC
-HDFC Bank,Kukatpally,HDFC
-ICICI Bank,Banjara Hills,ICIC
-ICICI Bank,Hitech City,ICIC
-Axis Bank,Ameerpet,UTIB
-Axis Bank,Kondapur,UTIB
-Punjab National Bank,Secunderabad,PUNB
-Canara Bank,Dilsukhnagar,CNRB
-Indian Bank,Tarnaka,IDIB
+
+bank_name,branch_name,city,state,ifsc_prefix
+State Bank of India,Hyderabad Main,Hyderabad,Telangana,SBIN
+State Bank of India,Begumpet,Hyderabad,Telangana,SBIN
+State Bank of India,Gachibowli,Hyderabad,Telangana,SBIN
+State Bank of India,Kukatpally,Hyderabad,Telangana,SBIN
+State Bank of India,Dilsukhnagar,Hyderabad,Telangana,SBIN
+HDFC Bank,Madhapur,Hyderabad,Telangana,HDFC
+HDFC Bank,Kukatpally,Hyderabad,Telangana,HDFC
+HDFC Bank,Gachibowli,Hyderabad,Telangana,HDFC
+HDFC Bank,Banjara Hills,Hyderabad,Telangana,HDFC
+ICICI Bank,Hitech City,Hyderabad,Telangana,ICIC
+ICICI Bank,Banjara Hills,Hyderabad,Telangana,ICIC
+ICICI Bank,Kondapur,Hyderabad,Telangana,ICIC
+Axis Bank,Ameerpet,Hyderabad,Telangana,UTIB
+Axis Bank,Kondapur,Hyderabad,Telangana,UTIB
+Axis Bank,Miyapur,Hyderabad,Telangana,UTIB
+Punjab National Bank,Secunderabad,Hyderabad,Telangana,PUNB
+Canara Bank,Dilsukhnagar,Hyderabad,Telangana,CNRB
+Indian Bank,Tarnaka,Hyderabad,Telangana,IDIB
+State Bank of India,MG Road,Bengaluru,Karnataka,SBIN
+HDFC Bank,Electronic City,Bengaluru,Karnataka,HDFC
+ICICI Bank,Whitefield,Bengaluru,Karnataka,ICIC
+Axis Bank,Indiranagar,Bengaluru,Karnataka,UTIB
+State Bank of India,T Nagar,Chennai,Tamil Nadu,SBIN
+HDFC Bank,Anna Nagar,Chennai,Tamil Nadu,HDFC
+ICICI Bank,Velachery,Chennai,Tamil Nadu,ICIC
+Axis Bank,Guindy,Chennai,Tamil Nadu,UTIB
+State Bank of India,Fort,Mumbai,Maharashtra,SBIN
+HDFC Bank,Andheri,Mumbai,Maharashtra,HDFC
+ICICI Bank,Powai,Mumbai,Maharashtra,ICIC
+Axis Bank,Bandra,Mumbai,Maharashtra,UTIB
+State Bank of India,Shivajinagar,Pune,Maharashtra,SBIN
+HDFC Bank,Hinjewadi,Pune,Maharashtra,HDFC
+ICICI Bank,Kothrud,Pune,Maharashtra,ICIC
+Axis Bank,Viman Nagar,Pune,Maharashtra,UTIB
+State Bank of India,Ashok Nagar,Delhi,Delhi,SBIN
+HDFC Bank,Connaught Place,Delhi,Delhi,HDFC
+ICICI Bank,Dwarka,Delhi,Delhi,ICIC
+Axis Bank,Saket,Delhi,Delhi,UTIB
+State Bank of India,Hazratganj,Lucknow,Uttar Pradesh,SBIN
+HDFC Bank,Gomti Nagar,Lucknow,Uttar Pradesh,HDFC
+ICICI Bank,Alambagh,Lucknow,Uttar Pradesh,ICIC
+State Bank of India,Park Street,Kolkata,West Bengal,SBIN
+HDFC Bank,Salt Lake,Kolkata,West Bengal,HDFC
+ICICI Bank,New Town,Kolkata,West Bengal,ICIC
+Axis Bank,Rajarhat,Kolkata,West Bengal,UTIB
+State Bank of India,MI Road,Jaipur,Rajasthan,SBIN
+HDFC Bank,Vaishali Nagar,Jaipur,Rajasthan,HDFC
+ICICI Bank,Malviya Nagar,Jaipur,Rajasthan,ICIC
+State Bank of India,Law Garden,Ahmedabad,Gujarat,SBIN
+HDFC Bank,Satellite,Ahmedabad,Gujarat,HDFC
+ICICI Bank,Navrangpura,Ahmedabad,Gujarat,ICIC
+State Bank of India,RS Puram,Coimbatore,Tamil Nadu,SBIN
+HDFC Bank,Gandhipuram,Coimbatore,Tamil Nadu,HDFC
+ICICI Bank,Peelamedu,Coimbatore,Tamil Nadu,ICIC

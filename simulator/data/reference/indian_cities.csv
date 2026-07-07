@@ -1,21 +1,22 @@
-city,state,region,tier,latitude,longitude
-Hyderabad,Telangana,South,Metro,17.3850,78.4867
-Bengaluru,Karnataka,South,Metro,12.9716,77.5946
-Chennai,Tamil Nadu,South,Metro,13.0827,80.2707
-Mumbai,Maharashtra,West,Metro,19.0760,72.8777
-Pune,Maharashtra,West,Metro,18.5204,73.8567
-Delhi,Delhi,North,Metro,28.6139,77.2090
-Noida,Uttar Pradesh,North,Metro,28.5355,77.3910
-Gurugram,Haryana,North,Metro,28.4595,77.0266
-Kolkata,West Bengal,East,Metro,22.5726,88.3639
-Ahmedabad,Gujarat,West,Metro,23.0225,72.5714
-Jaipur,Rajasthan,North,Metro,26.9124,75.7873
-Lucknow,Uttar Pradesh,North,Tier-2,26.8467,80.9462
-Visakhapatnam,Andhra Pradesh,South,Tier-2,17.6868,83.2185
-Vijayawada,Andhra Pradesh,South,Tier-2,16.5062,80.6480
-Warangal,Telangana,South,Tier-2,17.9689,79.5941
-Coimbatore,Tamil Nadu,South,Tier-2,11.0168,76.9558
-Indore,Madhya Pradesh,Central,Tier-2,22.7196,75.8577
-Bhopal,Madhya Pradesh,Central,Tier-2,23.2599,77.4126
-Nagpur,Maharashtra,West,Tier-2,21.1458,79.0882
-Kochi,Kerala,South,Tier-2,9.9312,76.2673
+city,state,region,tier,latitude,longitude,population,avg_income,digital_payment_score,fraud_risk_index,atm_density,pin_code
+Hyderabad,Telangana,South,Tier-1,17.385,78.4867,10494000,950000,94,72,28,500001
+Bengaluru,Karnataka,South,Tier-1,12.9716,77.5946,13608000,1200000,97,68,35,560001
+Chennai,Tamil Nadu,South,Tier-1,13.0827,80.2707,11224000,900000,92,60,30,600001
+Mumbai,Maharashtra,West,Tier-1,19.076,72.8777,20411000,1400000,98,74,42,400001
+Pune,Maharashtra,West,Tier-1,18.5204,73.8567,7120000,1050000,95,58,31,411001
+Delhi,Delhi,North,Tier-1,28.6139,77.209,32900000,1300000,96,76,40,110001
+Kolkata,West Bengal,East,Tier-1,22.5726,88.3639,15134000,800000,89,64,26,700001
+Ahmedabad,Gujarat,West,Tier-1,23.0225,72.5714,8060000,920000,91,55,25,380001
+Jaipur,Rajasthan,North,Tier-2,26.9124,75.7873,4300000,650000,83,49,18,302001
+Lucknow,Uttar Pradesh,North,Tier-2,26.8467,80.9462,3850000,620000,80,52,17,226001
+Coimbatore,Tamil Nadu,South,Tier-2,11.0168,76.9558,2200000,720000,86,43,20,641001
+Visakhapatnam,Andhra Pradesh,South,Tier-2,17.6868,83.2185,2350000,680000,84,47,19,530001
+Vijayawada,Andhra Pradesh,South,Tier-2,16.5062,80.648,1700000,640000,82,45,16,520001
+Warangal,Telangana,South,Tier-2,17.9689,79.5941,900000,520000,76,41,12,506001
+Nagpur,Maharashtra,West,Tier-2,21.1458,79.0882,3100000,700000,85,48,21,440001
+Indore,Madhya Pradesh,Central,Tier-2,22.7196,75.8577,3200000,710000,86,46,22,452001
+Bhopal,Madhya Pradesh,Central,Tier-2,23.2599,77.4126,2500000,660000,81,44,18,462001
+Kochi,Kerala,South,Tier-2,9.9312,76.2673,2100000,830000,90,39,23,682001
+Thiruvananthapuram,Kerala,South,Tier-2,8.5241,76.9366,1900000,790000,91,38,21,695001
+Bhubaneswar,Odisha,East,Tier-2,20.2961,85.8245,1300000,610000,79,42,15,751001
+Chandigarh,Chandigarh,North,Tier-2,30.7333,76.7794,1200000,880000,93,36,24,160001

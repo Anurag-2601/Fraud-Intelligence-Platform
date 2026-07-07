@@ -1,0 +1,21 @@
+rule_id,rule_name,category,weight,severity,threshold,description
+FR001,New Device Login,Device,20,Medium,1,Transaction from an unseen device
+FR002,Impossible Travel,Location,35,High,500 km in <2 hrs,Login/transaction from distant location
+FR003,High Amount Transaction,Amount,15,Medium,50000,Amount exceeds customer norm
+FR004,Midnight Transaction,Time,10,Low,00:00-04:00,Transaction during unusual hours
+FR005,Multiple Failed Logins,Authentication,25,High,5 attempts,Repeated failed authentication
+FR006,International Merchant,Merchant,30,High,Country mismatch,Merchant outside customer's country
+FR007,Rooted/Jailbroken Device,Device,18,Medium,trust_score < 80,High-risk device
+FR008,High Velocity,Velocity,40,Critical,5 txns / 2 min,Too many transactions in short period
+FR009,New Beneficiary,Beneficiary,12,Low,<24 hrs,Transfer to newly added beneficiary
+FR010,ATM Distance Anomaly,Location,22,Medium,100 km,ATM far from home city
+FR011,Card Not Present,Card,8,Low,Online,CNP transaction
+FR012,Repeated Declines,Card,16,Medium,3 declines,Multiple declined transactions
+FR013,Merchant Risk,Merchant,28,High,Risk >= High,High-risk merchant category
+FR014,Salary Day Spike,Behaviour,8,Low,3x average,Spending spike on salary day
+FR015,Inactive Account Reactivation,Account,20,Medium,90 days,Sudden activity after long inactivity
+FR016,Multiple Cards One Device,Device,25,High,4 cards,Many cards used on same device
+FR017,IP Address Change,Network,14,Medium,New IP,Unknown IP address
+FR018,VPN/Proxy Detected,Network,18,Medium,True,VPN or proxy usage
+FR019,Rapid Balance Drain,Behaviour,45,Critical,80% balance,Large balance reduction
+FR020,Confirmed Fraud Pattern,Composite,100,Critical,Composite,Multiple high-risk rules triggered
