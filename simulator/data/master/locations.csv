@@ -1,0 +1,21 @@
+location_id,city,state,region,tier,latitude,longitude,country,timezone
+LOC000001,Hyderabad,Telangana,South,Metro,17.385,78.4867,India,Asia/Kolkata
+LOC000002,Bengaluru,Karnataka,South,Metro,12.9716,77.5946,India,Asia/Kolkata
+LOC000003,Chennai,Tamil Nadu,South,Metro,13.0827,80.2707,India,Asia/Kolkata
+LOC000004,Mumbai,Maharashtra,West,Metro,19.076,72.8777,India,Asia/Kolkata
+LOC000005,Pune,Maharashtra,West,Metro,18.5204,73.8567,India,Asia/Kolkata
+LOC000006,Delhi,Delhi,North,Metro,28.6139,77.209,India,Asia/Kolkata
+LOC000007,Noida,Uttar Pradesh,North,Metro,28.5355,77.391,India,Asia/Kolkata
+LOC000008,Gurugram,Haryana,North,Metro,28.4595,77.0266,India,Asia/Kolkata
+LOC000009,Kolkata,West Bengal,East,Metro,22.5726,88.3639,India,Asia/Kolkata
+LOC000010,Ahmedabad,Gujarat,West,Metro,23.0225,72.5714,India,Asia/Kolkata
+LOC000011,Jaipur,Rajasthan,North,Metro,26.9124,75.7873,India,Asia/Kolkata
+LOC000012,Lucknow,Uttar Pradesh,North,Tier-2,26.8467,80.9462,India,Asia/Kolkata
+LOC000013,Visakhapatnam,Andhra Pradesh,South,Tier-2,17.6868,83.2185,India,Asia/Kolkata
+LOC000014,Vijayawada,Andhra Pradesh,South,Tier-2,16.5062,80.648,India,Asia/Kolkata
+LOC000015,Warangal,Telangana,South,Tier-2,17.9689,79.5941,India,Asia/Kolkata
+LOC000016,Coimbatore,Tamil Nadu,South,Tier-2,11.0168,76.9558,India,Asia/Kolkata
+LOC000017,Indore,Madhya Pradesh,Central,Tier-2,22.7196,75.8577,India,Asia/Kolkata
+LOC000018,Bhopal,Madhya Pradesh,Central,Tier-2,23.2599,77.4126,India,Asia/Kolkata
+LOC000019,Nagpur,Maharashtra,West,Tier-2,21.1458,79.0882,India,Asia/Kolkata
+LOC000020,Kochi,Kerala,South,Tier-2,9.9312,76.2673,India,Asia/Kolkata

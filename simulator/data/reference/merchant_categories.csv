@@ -1,0 +1,14 @@
+category,risk_level
+Grocery,Low
+Restaurant,Low
+Fuel,Low
+Pharmacy,Low
+Hospital,Low
+Electronics,Medium
+Shopping,Medium
+Travel,Medium
+Entertainment,Medium
+Jewellery,High
+Crypto Exchange,High
+Gaming,High
+International Transfer,High
