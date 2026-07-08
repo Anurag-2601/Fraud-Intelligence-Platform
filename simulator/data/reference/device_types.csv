@@ -1,0 +1,16 @@
+device_type,os_family,manufacturer,risk_weight,is_mobile
+Mobile,Android,Samsung,0.15,True
+Mobile,Android,Xiaomi,0.20,True
+Mobile,Android,OnePlus,0.15,True
+Mobile,Android,Realme,0.22,True
+Mobile,Android,Oppo,0.22,True
+Mobile,Android,Vivo,0.22,True
+Mobile,iOS,Apple,0.05,True
+Laptop,Windows,Dell,0.10,False
+Laptop,Windows,HP,0.12,False
+Laptop,Windows,Lenovo,0.10,False
+Laptop,Windows,Asus,0.12,False
+Laptop,macOS,Apple,0.06,False
+Tablet,Android,Samsung,0.18,True
+Tablet,iOS,Apple,0.06,True
+Tablet,Android,Lenovo,0.18,True
