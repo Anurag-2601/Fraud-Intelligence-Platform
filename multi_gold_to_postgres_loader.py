@@ -43,7 +43,7 @@ def load_gold_table(folder_name: str, table_name: str) -> None:
         name=table_name,
         schema="fraud",
         con=engine,
-        if_exists="replace",
+        if_exists="append",
         index=False,
         method="multi"
     )
