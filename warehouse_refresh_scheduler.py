@@ -22,13 +22,10 @@ logger = logging.getLogger("warehouse_scheduler")
 
 
 def execute_loader() -> None:
-    logger.info(f"Using Python interpreter: {sys.executable}")
+    logger.info(f"Scheduler interpreter: {sys.executable}")
 
     result = subprocess.run(
-        [
-            r"F:\Fraud-Intelligence-Platform\Fraud-Intelligence-Platform\.venv_spark\Scripts\python.exe",
-            str(LOADER_FILE)
-        ],
+        [sys.executable, str(LOADER_FILE)],
         capture_output=True,
         text=True
     )
