@@ -121,14 +121,11 @@ Fraud-Intelligence-Platform/
 ├── database/
 ├── dashboards/
 ├── docs/
-├── fraud_engine/
-├── logs/
-├── notebooks/
 ├── simulator/
 ├── spark/
 ├── streaming/
 ├── tests/
-│
+├── warehouse/
 ├── multi_gold_to_postgres_loader.py
 ├── warehouse_refresh_scheduler.py
 └── README.md
