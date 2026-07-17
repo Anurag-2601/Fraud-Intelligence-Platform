@@ -1,0 +1,55 @@
+bank,state,total_transactions,fraud_transactions,avg_transaction_amount,high_risk_transactions
+ICICI Bank,Uttar Pradesh,2,0,1841.43,0
+ICICI Bank,Tamil Nadu,3,0,9178.25,0
+HDFC Bank,Delhi,2,0,3209.395,0
+ICICI Bank,Karnataka,3,0,3362.056666666667,0
+HDFC Bank,Chandigarh,6,2,5440.711666666667,2
+State Bank of India,Uttar Pradesh,4,1,2135.3275,1
+ICICI Bank,Madhya Pradesh,3,0,6041.236666666667,0
+Axis Bank,Telangana,4,1,1806.1825,1
+State Bank of India,Telangana,9,1,3040.6388888888887,1
+State Bank of India,Andhra Pradesh,3,0,1335.1133333333335,0
+ICICI Bank,Delhi,3,0,5919.883333333334,0
+Punjab National Bank,Telangana,1,0,6282.4,0
+HDFC Bank,Rajasthan,2,0,1379.53,0
+Axis Bank,Madhya Pradesh,4,1,3499.35,1
+ICICI Bank,Andhra Pradesh,3,0,4961.840000000001,0
+State Bank of India,Madhya Pradesh,4,0,874.0975000000001,0
+Axis Bank,Chandigarh,2,0,2124.5,0
+Punjab National Bank,Madhya Pradesh,1,0,1848.54,0
+State Bank of India,Maharashtra,5,0,4808.322000000001,0
+HDFC Bank,West Bengal,5,0,5750.836,0
+Axis Bank,West Bengal,4,1,20833.6525,1
+HDFC Bank,Andhra Pradesh,4,0,3491.12,0
+State Bank of India,Gujarat,2,0,1976.9250000000002,0
+State Bank of India,Rajasthan,3,0,2946.53,0
+State Bank of India,Karnataka,1,0,3525.77,0
+ICICI Bank,Kerala,4,0,3036.9525000000003,0
+Axis Bank,Tamil Nadu,2,0,2218.99,0
+State Bank of India,Odisha,4,0,4684.57,0
+ICICI Bank,West Bengal,1,0,1704.4,0
+Axis Bank,Kerala,2,1,1401.9099999999999,1
+HDFC Bank,Telangana,7,0,9302.495714285715,0
+HDFC Bank,Madhya Pradesh,6,0,2457.1733333333336,0
+Punjab National Bank,Chandigarh,1,0,15097.06,0
+HDFC Bank,Gujarat,6,0,3851.6866666666665,0
+ICICI Bank,Rajasthan,3,0,1086.7666666666667,0
+ICICI Bank,Telangana,2,0,16413.24,0
+ICICI Bank,Maharashtra,4,0,2760.44,0
+HDFC Bank,Tamil Nadu,6,0,4305.738333333334,0
+ICICI Bank,Odisha,2,0,3663.135,0
+Indian Bank,Andhra Pradesh,1,0,1360.15,0
+Axis Bank,Karnataka,4,0,3328.1425000000004,0
+ICICI Bank,Chandigarh,4,1,6444.03,0
+Axis Bank,Delhi,5,1,2540.85,1
+State Bank of India,Chandigarh,1,0,27463.03,0
+Canara Bank,Telangana,3,0,3963.7466666666674,0
+State Bank of India,Kerala,5,1,3981.296,1
+HDFC Bank,Kerala,4,0,8852.880000000001,0
+State Bank of India,Tamil Nadu,5,0,6400.576,0
+Axis Bank,Andhra Pradesh,2,0,4245.895,0
+HDFC Bank,Karnataka,4,1,3203.1375,1
+HDFC Bank,Maharashtra,6,0,12474.151666666667,0
+Axis Bank,Maharashtra,2,0,3628.94,0
+Punjab National Bank,Kerala,2,0,9961.039999999999,0
+Axis Bank,Odisha,2,0,2028.79,0
