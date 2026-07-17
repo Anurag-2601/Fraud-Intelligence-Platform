@@ -1,0 +1,6 @@
+alert_id
+transaction_id
+alert_type
+severity
+alert_time
+status
