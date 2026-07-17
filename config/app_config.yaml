@@ -1,1 +1,8 @@
+application:
+  name: Fraud Intelligence Platform
+  version: 1.0.0
+  environment: development
+  timezone: Asia/Kolkata
 
+scheduler:
+  warehouse_refresh_seconds: 300
