@@ -1,0 +1,15 @@
+kafka:
+  bootstrap_servers:
+    - localhost:9092
+
+  topics:
+    transactions: fraud_transactions
+
+  producer:
+    acks: all
+    retries: 3
+    linger_ms: 5
+
+  consumer:
+    group_id: fraud_streaming_group
+    auto_offset_reset: latest
