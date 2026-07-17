@@ -1,0 +1,29 @@
+rules:
+
+  high_amount:
+    threshold: 100000
+    risk_score: 0.35
+
+  rapid_transactions:
+    threshold: 5
+    window_minutes: 5
+    risk_score: 0.25
+
+  new_device:
+    risk_score: 0.20
+
+  night_transactions:
+    start_hour: 0
+    end_hour: 5
+    risk_score: 0.15
+
+  high_risk_merchant_categories:
+    - gambling
+    - cryptocurrency
+    - gift_cards
+    - online_wallets
+
+risk_levels:
+  low: 0.30
+  medium: 0.60
+  high: 0.85
