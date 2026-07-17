@@ -1,0 +1,14 @@
+simulation:
+  transactions_per_batch: 100
+  batch_interval_seconds: 1
+
+customer_behavior:
+  salary_multiplier_min: 0.5
+  salary_multiplier_max: 2.0
+
+transaction_limits:
+  minimum_amount: 10
+  maximum_amount: 500000
+
+fraud_generation:
+  fraud_probability: 0.015
