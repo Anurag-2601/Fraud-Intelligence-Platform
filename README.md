@@ -244,17 +244,12 @@ streamlit run dashboards/app.py
 
 ---
 
-## Repository
-
-:contentReference[oaicite:2]{index=2}
-
----
-
 ## Author
 
 **Pallela Anurag**
 
-Final Year Computer Science Engineering Student  
+Computer Science Engineering Graduate
+
 Osmania University
 
 Interested in:
