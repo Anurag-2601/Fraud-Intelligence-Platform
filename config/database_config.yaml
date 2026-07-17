@@ -1,0 +1,14 @@
+postgres:
+  host: localhost
+  port: 5432
+  database: fraud_warehouse
+  schema: fraud
+  user: postgres
+
+connection_pool:
+  min_connections: 2
+  max_connections: 10
+
+loader:
+  batch_size: 1000
+  commit_frequency: 1000
