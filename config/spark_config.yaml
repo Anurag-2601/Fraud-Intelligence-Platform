@@ -1,0 +1,18 @@
+spark:
+  app_name: Fraud Intelligence Platform
+  master: local[*]
+
+  executor_memory: 4g
+  driver_memory: 2g
+
+  shuffle_partitions: 4
+
+paths:
+  bronze: warehouse/bronze
+  silver: warehouse/silver
+  gold: warehouse/gold
+
+checkpoints:
+  bronze: checkpoints/bronze
+  silver: checkpoints/silver
+  gold: checkpoints/gold
