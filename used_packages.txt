@@ -1,0 +1,20 @@
+# Pip install commands used in this project
+
+# Install all at once
+pip install pandas>=2.2.0 numpy>=2.0.0 faker>=37.0.0 python-dotenv>=1.0.0 tqdm>=4.67.0 sqlalchemy>=2.0.0 psycopg2-binary>=2.9.0 kafka-python>=2.2.0 findspark>=2.0.1 pyspark>=3.5.1 streamlit>=1.46.0 streamlit-autorefresh>=1.0.1 plotly>=6.0.0 geopy>=2.4.0
+
+# Install one by one
+pip install pandas>=2.2.0
+pip install numpy>=2.0.0
+pip install faker>=37.0.0
+pip install python-dotenv>=1.0.0
+pip install tqdm>=4.67.0
+pip install sqlalchemy>=2.0.0
+pip install psycopg2-binary>=2.9.0
+pip install kafka-python>=2.2.0
+pip install findspark>=2.0.1
+pip install pyspark>=3.5.1
+pip install streamlit>=1.46.0
+pip install streamlit-autorefresh>=1.0.1
+pip install plotly>=6.0.0
+pip install geopy>=2.4.0
