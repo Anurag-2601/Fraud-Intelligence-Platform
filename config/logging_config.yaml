@@ -1,0 +1,12 @@
+logging:
+  level: INFO
+  log_directory: logs
+
+rotation:
+  max_file_size_mb: 50
+  backup_files: 5
+
+format:
+  timestamp: true
+  level: true
+  filename: true
