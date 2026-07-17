@@ -1,0 +1,9 @@
+customer_id
+total_transactions
+total_amount
+fraud_transactions
+fraud_rate
+average_transaction_amount
+risk_score
+risk_level
+last_updated
