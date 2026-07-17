@@ -118,24 +118,51 @@ st.markdown("---")
 
 st.sidebar.title("Dashboard Filters")
 
+if st.sidebar.button(" Clear All Filters"):
+
+    st.session_state.transaction_types_filter = []
+    st.session_state.banks_filter = []
+    st.session_state.states_filter = []
+    st.session_state.merchant_categories_filter = []
+
+    st.session_state.risk_filter = (
+        int(df["risk_score"].min()),
+        int(df["risk_score"].max())
+    )
+
+    st.session_state.amount_filter = (
+        int(df["transaction_amount"].min()),
+        int(df["transaction_amount"].max())
+    )
+
+    st.session_state.customer_filter = ""
+    st.session_state.merchant_filter = ""
+    st.session_state.fraud_only_filter = False
+
+    st.rerun()
+
 transaction_types = st.sidebar.multiselect(
     "Transaction Type",
-    sorted(df["transaction_type"].dropna().unique())
+    sorted(df["transaction_type"].dropna().unique()),
+    key="transaction_types_filter"
 )
 
 banks = st.sidebar.multiselect(
     "Bank",
-    sorted(df["bank"].dropna().unique())
+    sorted(df["bank"].dropna().unique()),
+    key="banks_filter"
 )
 
 states = st.sidebar.multiselect(
     "State",
-    sorted(df["state"].dropna().unique())
+    sorted(df["state"].dropna().unique()),
+    key="states_filter"
 )
 
 merchant_categories = st.sidebar.multiselect(
     "Merchant Category",
-    sorted(df["merchant_category"].dropna().unique())
+    sorted(df["merchant_category"].dropna().unique()),
+    key="merchant_categories_filter"
 )
 
 risk_range = st.sidebar.slider(
@@ -145,7 +172,8 @@ risk_range = st.sidebar.slider(
     (
         int(df["risk_score"].min()),
         int(df["risk_score"].max())
-    )
+    ),
+    key="risk_filter"
 )
 
 amount_range = st.sidebar.slider(
@@ -155,19 +183,23 @@ amount_range = st.sidebar.slider(
     (
         int(df["transaction_amount"].min()),
         int(df["transaction_amount"].max())
-    )
+    ),
+    key="amount_filter"
 )
 
 customer_search = st.sidebar.text_input(
-    "Customer ID"
+    "Customer ID",
+    key="customer_filter"
 )
 
 merchant_search = st.sidebar.text_input(
-    "Merchant ID"
+    "Merchant ID",
+    key="merchant_filter"
 )
 
 show_only_fraud = st.sidebar.checkbox(
-    "Show Fraud Transactions Only"
+    "Show Fraud Transactions Only",
+    key="fraud_only_filter"
 )
 
 # ==========================================================
