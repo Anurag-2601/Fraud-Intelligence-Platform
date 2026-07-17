@@ -1,0 +1,13 @@
+dashboard:
+  auto_refresh_seconds: 30
+
+charts:
+  top_merchants_limit: 10
+  top_customers_limit: 10
+
+tables:
+  recent_transactions_limit: 100
+
+filters:
+  default_days: 7
+  
