@@ -1,0 +1,15 @@
+transaction_id
+transaction_time
+customer_id
+merchant_id
+merchant_category
+transaction_amount
+city
+state
+country
+device_type
+payment_method
+is_fraud
+risk_score
+risk_level
+created_at
