@@ -56,12 +56,35 @@ DB_PORT = get_db_credential("DB_PORT")
 DB_NAME = get_db_credential("DB_NAME")
 
 DATABASE_URL = (
-    f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}"
-    f"@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-    "?sslmode=require"
+    f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@"
+    f"{DB_HOST}:{DB_PORT}/{DB_NAME}"
+    f"?sslmode=require&channel_binding=require"
 )
 
 engine = create_engine(DATABASE_URL, pool_pre_ping=True, pool_recycle=1800)
+
+from datetime import datetime, timezone
+
+# ==========================================================
+# Pipeline Health Monitor
+# ==========================================================
+
+@st.cache_data(ttl=5)
+def get_pipeline_status():
+    """
+    Returns:
+        total_rows      -> Total number of rows in fact_transactions
+        last_event_time -> Latest transaction timestamp
+    """
+    query = """
+    SELECT
+        COUNT(*) AS total_rows,
+        MAX(event_timestamp) AS last_event_time
+    FROM fraud.fact_transactions
+    """
+
+    df = pd.read_sql(query, engine)
+    return df.iloc[0]
 
 # ==========================================================
 # RISK BUCKET DEFINITION (shared by KPI + chart so they always agree)
@@ -140,6 +163,72 @@ banks_opts, states_opts, category_opts, txn_type_opts, bounds = load_filter_opti
 # ==========================================================
 
 st.title("🛡️ Enterprise Fraud Intelligence Platform")
+
+# ==========================================================
+# Live Pipeline Status
+# ==========================================================
+
+status = get_pipeline_status()
+
+total_rows = int(status["total_rows"])
+
+last_refresh = status["last_event_time"]
+
+if pd.notna(last_refresh):
+
+    last_refresh = pd.to_datetime(last_refresh)
+
+    if last_refresh.tzinfo is not None:
+        now = datetime.now(timezone.utc)
+    else:
+        now = datetime.now()
+
+    age_seconds = int((now - last_refresh).total_seconds())
+
+    if age_seconds < 60:
+        pipeline_status = "🟢 Healthy"
+
+    elif age_seconds <= 300:
+        pipeline_status = "🟡 Delayed"
+
+    else:
+        pipeline_status = "🔴 Pipeline Stopped"
+
+else:
+    age_seconds = None
+    pipeline_status = "🔴 No Data"
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric(
+        label="Pipeline Status",
+        value=pipeline_status
+    )
+
+with col2:
+    st.metric(
+        label="Last ETL Refresh",
+        value=last_refresh.strftime("%Y-%m-%d %H:%M:%S")
+        if pd.notna(last_refresh)
+        else "N/A"
+    )
+
+with col3:
+    st.metric(
+        label="Rows in Database",
+        value=f"{total_rows:,}"
+    )
+
+with col4:
+    st.metric(
+        label="Data Freshness",
+        value=f"{age_seconds} sec"
+        if age_seconds is not None
+        else "N/A"
+    )
+
+st.markdown("---")
 
 status_col1, status_col2, status_col3 = st.columns(3)
 
@@ -501,4 +590,24 @@ st.markdown("---")
 st.caption(
     "Enterprise Fraud Intelligence Platform | "
     "Kafka | Spark | PostgreSQL | Streamlit"
+)
+
+# ==========================================================
+# Pipeline Health Guide
+# ==========================================================
+
+st.markdown("---")
+
+st.markdown("## 🚦 Pipeline Health Status Guide")
+
+st.success(
+    "🟢 **Healthy** — Data refreshed within the last **60 seconds**."
+)
+
+st.warning(
+    "🟡 **Delayed** — Data refreshed between **1 and 5 minutes** ago."
+)
+
+st.error(
+    "🔴 **Pipeline Stopped** — No new data received for **more than 5 minutes**."
 )
