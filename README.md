@@ -1,4 +1,4 @@
-# 🛡️ Enterprise Fraud Intelligence Platform
+#  Enterprise Fraud Intelligence Platform
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Apache Spark](https://img.shields.io/badge/Apache-Spark-orange)
@@ -7,7 +7,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Live-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## 🚀 Live Dashboard
+##  Live Dashboard
 
 **Streamlit Dashboard**
 
@@ -15,7 +15,7 @@ https://fraud-intelligence-platform-dashboard-deploy.streamlit.app/
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Enterprise Fraud Intelligence Platform** is a real-time fraud detection and analytics system that simulates financial transactions, streams them through Apache Kafka, processes them using Apache Spark Structured Streaming, stores transformed data in a Medallion Architecture (Bronze → Silver → Gold), loads analytical datasets into a cloud-hosted Neon PostgreSQL database, and visualizes fraud insights using an interactive Streamlit dashboard.
 
@@ -23,7 +23,7 @@ The project demonstrates an end-to-end modern Data Engineering pipeline suitable
 
 ---
 
-# 🎯 Key Features
+#  Key Features
 
 - Real-time financial transaction simulator
 - Fraud scenario simulation
@@ -43,7 +43,7 @@ The project demonstrates an end-to-end modern Data Engineering pipeline suitable
 
 ---
 
-# 🏗️ System Architecture
+#  System Architecture
 
 ```
 Transaction Simulator
@@ -72,7 +72,7 @@ Streamlit Dashboard
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 Fraud-Intelligence-Platform/
@@ -114,7 +114,7 @@ Fraud-Intelligence-Platform/
 
 ---
 
-# ⚙️ Tech Stack
+#  Tech Stack
 
 ### Programming
 
@@ -153,7 +153,7 @@ Fraud-Intelligence-Platform/
 
 ---
 
-# 📊 Dashboard Features
+#  Dashboard Features
 
 ### Executive KPIs
 
@@ -181,51 +181,66 @@ Fraud-Intelligence-Platform/
 
 ---
 
-# 📸 Dashboard Preview
+#  Dashboard Preview
 
 ## Dashboard Overview
 
-![Dashboard](docs/screenshots/001_dashboard_overview.png)
+<p align="center">
+  <img src="screenshort/001_dashboard_overview.png" width="1000">
+</p>
 
 ---
 
 ## Executive KPIs
 
-![Executive KPIs](docs/screenshots/02_executive_kpis.png)
+<p align="center">
+  <img src="screenshort/02_executive_kpis.png" width="1000">
+</p>
 
 ---
 
 ## Risk Distribution
 
-![Risk Distribution](docs/screenshots/03_risk_distribution.png)
+<p align="center">
+  <img src="screenshort/03_risk_distribution.png" width="1000">
+</p>
 
 ---
 
 ## Bank & State Analysis
 
-![Bank Analysis](docs/screenshots/04_bank_state_analysis.png)
+<p align="center">
+  <img src="screenshort/04_bank_state_analysis.png" width="1000">
+</p>
+
 
 ---
 
 ## Merchant Category Analysis
 
-![Merchant Category](docs/screenshots/05_merchant_category_analysis.png)
+<p align="center">
+  <img src="screenshort/05_merchant_category_analysis.png" width="1000">
+</p>
 
 ---
 
 ## Top Risky Customers
 
-![Customers](docs/screenshots/06_top_risky_customers.png)
+<p align="center">
+  <img src="screenshort/06_top_risky_customers.png" width="1000">
+</p>
 
 ---
 
 ## Top Risky Merchants
 
-![Merchants](docs/screenshots/07_top_risky_merchants.png)
+<p align="center">
+  <img src="screenshort/07_top_risky_merchants.png" width="1000">
+</p>
 
 ---
 
-# 🚀 Running the Project
+#  Running the Project
 
 ## Clone Repository
 
@@ -309,7 +324,7 @@ streamlit run dashboard/streamlit/app.py
 
 ---
 
-# ☁️ Deployment
+#  Deployment
 
 ### Dashboard
 
@@ -325,7 +340,7 @@ PostgreSQL
 
 ---
 
-# 📈 Future Improvements
+#  Future Improvements
 
 - Docker Deployment
 - Kubernetes
@@ -339,7 +354,7 @@ PostgreSQL
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 **Pallela Anurag**
 
@@ -353,6 +368,6 @@ https://github.com/Anurag-2601
 
 ---
 
-# ⭐ Support
+#  Support
 
 If you found this project helpful, please consider giving it a ⭐ on GitHub.
