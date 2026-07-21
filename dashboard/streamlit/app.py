@@ -56,9 +56,9 @@ DB_PORT = get_db_credential("DB_PORT")
 DB_NAME = get_db_credential("DB_NAME")
 
 DATABASE_URL = (
-    f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@"
-    f"{DB_HOST}:{DB_PORT}/{DB_NAME}"
-    f"?sslmode=require&channel_binding=require"
+    f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}"
+    f"@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+    "?sslmode=require"
 )
 
 engine = create_engine(DATABASE_URL, pool_pre_ping=True, pool_recycle=1800)
