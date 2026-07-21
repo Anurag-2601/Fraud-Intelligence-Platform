@@ -51,17 +51,6 @@ GOLD_TABLE_MAPPING = {
 }
 
 # ============================================================
-# Load-mode switch
-# ============================================================
-# "replace" -> table always reflects only the latest Gold snapshot
-#              (correct if Gold recomputes full aggregates each cycle)
-# "append"  -> keeps every snapshot from every cycle
-#              (only correct if you also add a snapshot/run timestamp
-#              column upstream in gold_aggregations.py so rows are
-#              distinguishable — NOT currently the case here)
-LOAD_MODE = "replace"
-
-# ============================================================
 # Load One Table
 # ============================================================
 
@@ -84,19 +73,17 @@ def load_gold_table(folder_name: str, table_name: str) -> None:
     logger.info("Columns : %s", list(df.columns))
     logger.info("Dtypes:\n%s", df.dtypes)
 
+    # Append latest Gold rows into the target table.
     with engine.begin() as conn:
         df.to_sql(
             name=table_name,
             schema="fraud",
             con=conn,
-            if_exists=LOAD_MODE,
+            if_exists="append",
             index=False,
         )
 
-    logger.info(
-        "Successfully loaded %d rows into fraud.%s (mode=%s)",
-        len(df), table_name, LOAD_MODE
-    )
+    logger.info("Successfully loaded %d rows into fraud.%s", len(df), table_name)
 
 
 # ============================================================
@@ -110,8 +97,6 @@ def main() -> None:
     logger.info("Starting Gold Layer Loader")
     logger.info("=" * 70)
 
-    failures = []
-
     for folder, table in GOLD_TABLE_MAPPING.items():
 
         try:
@@ -119,13 +104,9 @@ def main() -> None:
 
         except Exception:
             logger.exception("FAILED LOADING %s", table)
-            failures.append(table)
 
     logger.info("=" * 70)
-    if failures:
-        logger.error("Gold Layer Loading completed WITH FAILURES: %s", failures)
-    else:
-        logger.info("Gold Layer Loading Completed — all tables loaded successfully")
+    logger.info("Gold Layer Loading Completed")
     logger.info("=" * 70)
 
 
