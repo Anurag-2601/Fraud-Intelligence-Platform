@@ -1,257 +1,358 @@
-# Fraud Intelligence Platform
-### Real-Time Fraud Analytics & Behavioral Anomaly Detection System
+# 🛡️ Enterprise Fraud Intelligence Platform
 
-An enterprise-style end-to-end fraud intelligence platform designed to simulate, process, analyze, and visualize financial transactions in real time using modern data engineering technologies.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Apache Spark](https://img.shields.io/badge/Apache-Spark-orange)
+![Apache Kafka](https://img.shields.io/badge/Apache-Kafka-black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-336791)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-The platform leverages Apache Kafka, Apache Spark Structured Streaming, PostgreSQL, and Streamlit to build a production-style fraud monitoring solution capable of detecting suspicious financial activity through rule-based risk scoring and behavioral anomaly detection.
+## 🚀 Live Dashboard
 
----
+**Streamlit Dashboard**
 
-## Project Highlights
-
-- Real-time transaction simulation engine
-- Fraud scenario injection framework
-- Kafka-based event streaming architecture
-- Spark Structured Streaming pipeline
-- Medallion Architecture implementation (Bronze → Silver → Gold)
-- Rule-based fraud detection engine
-- Customer and merchant risk scoring
-- PostgreSQL analytical warehouse
-- Interactive Streamlit dashboard
-- Production-style ETL orchestration
+https://fraud-intelligence-platform-dashboard-deploy.streamlit.app/
 
 ---
 
-## Architecture
+## 📌 Project Overview
 
-```text
+The **Enterprise Fraud Intelligence Platform** is a real-time fraud detection and analytics system that simulates financial transactions, streams them through Apache Kafka, processes them using Apache Spark Structured Streaming, stores transformed data in a Medallion Architecture (Bronze → Silver → Gold), loads analytical datasets into a cloud-hosted Neon PostgreSQL database, and visualizes fraud insights using an interactive Streamlit dashboard.
+
+The project demonstrates an end-to-end modern Data Engineering pipeline suitable for Banking, FinTech, Payment Systems, and Fraud Analytics applications.
+
+---
+
+# 🎯 Key Features
+
+- Real-time financial transaction simulator
+- Fraud scenario simulation
+- Apache Kafka streaming
+- Spark Structured Streaming
+- Bronze, Silver & Gold ETL architecture
+- Cloud-hosted Neon PostgreSQL Data Warehouse
+- Interactive Streamlit Dashboard
+- Fraud KPIs & Executive Dashboard
+- Customer Risk Analytics
+- Merchant Risk Analytics
+- Bank-wise Fraud Analysis
+- State-wise Fraud Analysis
+- Fraud Category Distribution
+- Pipeline Health Monitoring
+- Automated Warehouse Refresh Scheduler
+
+---
+
+# 🏗️ System Architecture
+
+```
 Transaction Simulator
-        ↓
-Fraud Scenario Engine
-        ↓
-Kafka Producer
-        ↓
-Kafka Topic (fraud_transactions)
-        ↓
+        │
+        ▼
+Apache Kafka
+        │
+        ▼
 Spark Structured Streaming
-        ↓
+        │
+        ▼
 Bronze Layer
-        ↓
+        │
+        ▼
 Silver Layer
-        ↓
+        │
+        ▼
 Gold Layer
-        ↓
-PostgreSQL Warehouse
-        ↓
+        │
+        ▼
+Neon PostgreSQL
+        │
+        ▼
 Streamlit Dashboard
 ```
 
 ---
 
-## Technology Stack
+# 📂 Project Structure
 
-| Category | Technologies |
-|----------|-------------|
-| Programming | Python |
-| Streaming | Apache Kafka |
-| Stream Processing | Apache Spark Structured Streaming |
-| Storage Format | Apache Parquet |
-| Data Warehouse | PostgreSQL |
-| Dashboard | Streamlit |
-| Visualization | Plotly |
-| Data Processing | Pandas |
-| Architecture | Medallion Architecture |
-
----
-
-## Core Features
-
-### Real-Time Transaction Processing
-- Generates realistic financial transaction streams
-- Supports customer behavioral simulation
-- Simulates merchant activity and transaction patterns
-
-### Fraud Detection Engine
-- High-value transaction detection
-- Transaction velocity analysis
-- New device detection
-- Night-time transaction monitoring
-- Merchant category risk analysis
-- Rule-based risk scoring
-
-### Medallion Architecture
-
-#### Bronze Layer
-- Raw immutable transaction ingestion
-- Historical replay capability
-- Schema preservation
-
-#### Silver Layer
-- Data cleaning
-- Feature engineering
-- Data validation
-- Standardization
-
-#### Gold Layer
-- Customer risk metrics
-- Merchant risk metrics
-- Fraud aggregations
-- Dashboard-ready datasets
-
----
-
-## Fraud Detection Logic
-
-| Fraud Indicator | Condition |
-|----------------|-----------|
-| High Amount Transaction | Amount > ₹100,000 |
-| Velocity Fraud | More than 5 transactions within 5 minutes |
-| New Device Usage | Customer uses unseen device |
-| Night Activity | Transactions between 12 AM and 5 AM |
-| High Risk Merchant Category | Suspicious merchant category detected |
-
----
-
-## Project Structure
-
-```text
+```
 Fraud-Intelligence-Platform/
+
 │
 ├── config/
+├── dashboard/
+│     └── streamlit/
 ├── database/
-├── dashboards/
+│     ├── schemas/
+│     ├── tables/
+│     ├── views/
+│     ├── indexes/
+│     └── queries/
+│
 ├── docs/
+│     └── screenshots/
+│
 ├── simulator/
+│
 ├── spark/
+│
 ├── streaming/
-├── tests/
+│
 ├── warehouse/
+│     ├── bronze/
+│     ├── silver/
+│     └── gold/
+│
+├── gold_loader.py
+├── silver_fact_loader.py
 ├── multi_gold_to_postgres_loader.py
 ├── warehouse_refresh_scheduler.py
-└── README.md
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-## Dashboard Capabilities
+# ⚙️ Tech Stack
 
-- Fraud Monitoring Dashboard
-- Transaction Distribution Analysis
-- Merchant Risk Analysis
-- Customer Risk Analysis
-- Fraud Trend Visualization
-- High-Risk Transaction Tracking
-- Interactive Filtering and Drilldowns
+### Programming
 
----
+- Python
 
-## Skills Demonstrated
+### Data Streaming
 
-### Data Engineering
 - Apache Kafka
-- Apache Spark
-- Streaming ETL Pipelines
-- Medallion Architecture
-- Data Warehousing
-- PostgreSQL
 
-### Data Analytics
-- Fraud Analytics
-- Behavioral Analysis
-- Risk Scoring
-- KPI Development
-- Dashboard Design
+### Data Processing
 
-### Software Engineering
-- Modular Architecture
-- Configuration Management
-- Logging
-- Documentation
-- Pipeline Orchestration
+- Apache Spark Structured Streaming
 
----
+### Storage
 
-## Use Cases
+- Bronze Layer
+- Silver Layer
+- Gold Layer
 
-- Banking Fraud Monitoring
-- Payment Fraud Detection
-- Transaction Risk Analysis
-- Merchant Risk Monitoring
-- Behavioral Anomaly Detection
-- Financial Crime Analytics
+### Database
+
+- PostgreSQL (Local Development)
+- Neon PostgreSQL (Cloud Deployment)
+
+### Dashboard
+
+- Streamlit
+- Plotly
+
+### Libraries
+
+- Pandas
+- SQLAlchemy
+- Psycopg2
+- PySpark
 
 ---
 
-## Future Enhancements
+# 📊 Dashboard Features
 
-- Machine Learning Fraud Scoring
-- XGBoost Risk Prediction
-- Isolation Forest Anomaly Detection
-- Real-Time Alert Notifications
-- Docker Deployment
-- Cloud Deployment
+### Executive KPIs
+
+- Total Transactions
+- Fraud Transactions
+- Fraud Rate
+- Average Fraud Score
+
+### Analytics
+
+- Fraud by Bank
+- Fraud by State
+- Fraud by Merchant Category
+- Customer Risk Ranking
+- Merchant Risk Ranking
+- Risk Distribution
+- Transaction Trends
+
+### Pipeline Monitoring
+
+- Pipeline Status
+- Last ETL Refresh
+- Total Database Rows
+- Data Freshness Indicator
 
 ---
 
-## Installation
+# 📸 Dashboard Preview
 
-### Clone Repository
+## Dashboard Overview
+
+![Dashboard](docs/screenshots/001_dashboard_overview.png)
+
+---
+
+## Executive KPIs
+
+![Executive KPIs](docs/screenshots/02_executive_kpis.png)
+
+---
+
+## Risk Distribution
+
+![Risk Distribution](docs/screenshots/03_risk_distribution.png)
+
+---
+
+## Bank & State Analysis
+
+![Bank Analysis](docs/screenshots/04_bank_state_analysis.png)
+
+---
+
+## Merchant Category Analysis
+
+![Merchant Category](docs/screenshots/05_merchant_category_analysis.png)
+
+---
+
+## Top Risky Customers
+
+![Customers](docs/screenshots/06_top_risky_customers.png)
+
+---
+
+## Top Risky Merchants
+
+![Merchants](docs/screenshots/07_top_risky_merchants.png)
+
+---
+
+# 🚀 Running the Project
+
+## Clone Repository
 
 ```bash
-git clone https://github.com/Anurag-2601/Fraud-Intelligence-Platform.git
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+```
 cd Fraud-Intelligence-Platform
 ```
 
-### Install Dependencies
+---
 
-```bash
+## Install Dependencies
+
+```
 pip install -r requirements.txt
-```
-
-### Start Kafka
-
-```bash
-zookeeper-server-start.bat config/zookeeper.properties
-
-kafka-server-start.bat config/server.properties
-```
-
-### Run Streaming Pipeline
-
-```bash
-python simulator/simulator.py
-
-python spark/bronze.py
-python spark/silver.py
-python spark/gold.py
-```
-
-### Load Warehouse
-
-```bash
-python multi_gold_to_postgres_loader.py
-python warehouse_refresh_scheduler.py
-```
-
-### Launch Dashboard
-
-```bash
-streamlit run dashboards/app.py
 ```
 
 ---
 
-## Author
+## Start Kafka
+
+Run Apache Kafka and ZooKeeper.
+
+---
+
+## Generate Transactions
+
+```
+python simulator/engine/stream_generator.py
+```
+
+---
+
+## Start Spark Bronze
+
+```
+python spark/bronze_stream.py
+```
+
+---
+
+## Start Silver Transformation
+
+```
+python spark/silver_transform.py
+```
+
+---
+
+## Generate Gold Layer
+
+```
+python spark/gold_aggregations.py
+```
+
+---
+
+## Load Gold Data into Neon
+
+```
+python multi_gold_to_postgres_loader.py
+```
+
+---
+
+## Start Warehouse Scheduler
+
+```
+python warehouse_refresh_scheduler.py
+```
+
+---
+
+## Launch Dashboard
+
+```
+streamlit run dashboard/streamlit/app.py
+```
+
+---
+
+# ☁️ Deployment
+
+### Dashboard
+
+Streamlit Community Cloud
+
+### Database
+
+Neon PostgreSQL
+
+### Local Development
+
+PostgreSQL
+
+---
+
+# 📈 Future Improvements
+
+- Docker Deployment
+- Kubernetes
+- Apache Airflow
+- ML-based Fraud Detection
+- Grafana Monitoring
+- Prometheus Metrics
+- Cloud Deployment on AWS/GCP/Azure
+- CI/CD Automation
+- REST API
+
+---
+
+# 👨‍💻 Author
 
 **Pallela Anurag**
 
-Computer Science Engineering Graduate
+Data Analytics | SQL | Python | Apache Spark | Kafka | Power BI | Streamlit
 
-Osmania University
+LinkedIn:
+https://linkedin.com/in/pallelaanurag
 
-Interested in:
-- Data Analytics
-- Fraud Analytics
-- Risk Analytics
-- Data Engineering
-- Analytics Engineering
+GitHub:
+https://github.com/Anurag-2601
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
