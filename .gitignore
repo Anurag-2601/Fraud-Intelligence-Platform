@@ -1,21 +1,69 @@
+# ============================
 # Python virtual environments
+# ============================
 .venv/
 .venv_spark/
 venv/
 
-# Python cache artifacts
+# ============================
+# Environment variables
+# ============================
+.env
+
+# ============================
+# Python cache
+# ============================
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Tooling/test caches
+# ============================
+# Testing & Coverage
+# ============================
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
 
-# OS/editor files
+# ============================
+# Logs
+# ============================
+logs/
+*.log
+
+# ============================
+# Streamlit
+# ============================
+.streamlit/secrets.toml
+
+# ============================
+# OS / Editor
+# ============================
 .DS_Store
 Thumbs.db
 .vscode/
+
+# ============================
+# Jupyter
+# ============================
+.ipynb_checkpoints/
+
+# ============================
+# Spark
+# ============================
+metastore_db/
+spark-warehouse/
+
+# ============================
+# Temporary files
+# ============================
+*.tmp
+*.bak
+*.swp
+
+# ============================
+# Build artifacts
+# ============================
+dist/
+build/

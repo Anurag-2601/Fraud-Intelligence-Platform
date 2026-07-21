@@ -30,12 +30,16 @@ SILVER_PATH = str(
     "transactions_silver"
 )
 
-BRONZE_PATH = "warehouse/bronze/transactions_bronze.csv"
+# NOTE: previously there was a second BRONZE_PATH assignment here
+# pointing at a static "warehouse/bronze/transactions_bronze.csv"
+# file, which silently overrode the real streaming Bronze path above
+# and read via spark.read.csv(). That file never changed, which is
+# why every downstream number stayed frozen at 4869 regardless of
+# how much new data flowed through Kafka/Bronze. Removed — this now
+# reads the live Bronze Parquet output that bronze_stream.py writes.
 
-df = spark.read.csv(
-    BRONZE_PATH,
-    header=True,
-    inferSchema=True
+df = spark.read.parquet(
+    BRONZE_PATH
 )
 
 silver_df = (
